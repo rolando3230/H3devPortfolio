@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const scrollToDiv = (id) => {
-    const element = document.getElementById("targetDiv");
-    element.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
